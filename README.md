@@ -1,1 +1,1 @@
-The start of a TI-83
+The start of a ghetto calc
