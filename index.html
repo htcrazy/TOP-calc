@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="external.js" defer></script>
+        <title>Poopy Calc</title>
+    </head>
+    <body>
+
+        <div id="calcContainer" tabindex="-1">
+            <div id="screen">
+                <div id="passiveScreen"></div>
+                <div id="activeScreen"></div>
+            </div>
+
+            <div class="numpad">
+                <div class="numpadRow">
+                    <button class="wideButton" onclick="clearClick()">Clear</button>
+                    <button class="wideButton" onclick="backspace()">Backspace</button>
+                </div>
+                <div class="numpadRow">
+                    <button class="squareButton" onclick="addNeg()">(-)</button>
+                    <button class="squareButton" onclick="addOperation('divide')">&#247;</button>
+                    <button class="squareButton" onclick="addOperation('multiply')">&#215;</button>
+                    <button class="squareButton" onclick="addOperation('subtract')">&#8722;</button>
+                </div>
+                <div class="numpadRow">
+                    <div class="doubleRow">
+                        <div class="numpadRow">
+                            <button class="squareButton" onclick="addNum(7)">7</button>
+                            <button class="squareButton" onclick="addNum(8)">8</button>
+                            <button class="squareButton" onclick="addNum(9)">9</button>
+                        </div>
+                        <div class="numpadRow">
+                            <button class="squareButton" onclick="addNum(4)">4</button>
+                            <button class="squareButton" onclick="addNum(5)">5</button>
+                            <button class="squareButton" onclick="addNum(6)">6</button>
+                        </div>
+                    </div>
+                    <div class="doubleRow">
+                        <button class="tallButton" onclick="addOperation('add')">&#43;</button>
+                    </div>
+                </div>
+                <div class="numpadRow">
+                    <div class="doubleRow">
+                        <div class="numpadRow">
+                            <button class="squareButton" onclick="addNum(1)">1</button>
+                            <button class="squareButton" onclick="addNum(2)">2</button>
+                            <button class="squareButton" onclick="addNum(3)">3</button>
+                        </div>
+                        <div class="numpadRow">
+                            <button class="wideButton" onclick="addNum(0)">0</button>
+                            <button class="squareButton" onclick="addDecimal()">&#46;</button>
+                        </div>
+                    </div>
+                    <div class="doubleRow">
+                        <button class="tallButton" onclick="operate()">Enter</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
