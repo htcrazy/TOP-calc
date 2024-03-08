@@ -1,13 +1,25 @@
 body {
     display: flex;
     justify-content: space-around;
+    background-color: black;
+    color: wheat;
+}
+
+button {
+    background-color: black;
+    color: wheat;
+    border: 1px solid white;
+}
+
+button:active {
+    border: 1px solid gray;
 }
 
 #calcContainer {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    border: 1px solid black;
+    border: 1px solid wheat;
     padding: 10px;
 }
 
